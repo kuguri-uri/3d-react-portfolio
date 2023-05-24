@@ -20,9 +20,8 @@ const Hero = () => {
             using React or native JS
           </p>
         </div>
-
-        {/* <ComputersCanvas /> */}
       </div> 
+      <ComputersCanvas />
     </section>
   )
 }
