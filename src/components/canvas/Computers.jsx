@@ -20,7 +20,7 @@ const Computers = ( { isMobile} ) => {
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
-      <primitive                            //sketchfab for 3d models
+      <primitive                            
         object={computer.scene}
         scale={isMobile ? 0.5 : 0.65}
         position={isMobile ? [-1, -3.5, -1.5] : [0, -3.75, -1.5]}
@@ -54,7 +54,7 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop='demand'
       shadows
-      // dpr={[1, 2]}
+      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
@@ -73,3 +73,5 @@ const ComputersCanvas = () => {
 }
 
 export default ComputersCanvas;
+
+//sketchfab for 3d models
